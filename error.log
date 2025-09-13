@@ -1,0 +1,6 @@
+
+[04-Sep-2025 19:06:41 Europe/Berlin] PHP Warning:  require(C:\xampp\htdocs\bakeryApp\/bakeryApp/routes/customer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\index.php on line 70
+[04-Sep-2025 19:06:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\bakeryApp\/bakeryApp/routes/customer.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\index.php:70
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\index.php on line 70

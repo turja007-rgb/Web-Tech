@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ensures full height */
+}
+
+main.flex-fill {
+    flex: 1; /* this pushes footer down */
+}
+
+
+/* Navbar customizations */
+.navbar {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.nav-link {
+    font-size: 1rem;
+}
+.cart-badge {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    font-size: 0.75rem;
+}
+/* Custom Toast */
+.custom-toast {
+    position: fixed;
+    top: 50%; /* vertical center */
+    left: 50%; /* horizontal center */
+    transform: translate(-50%, -50%);
+    background-color: #28a745; /* green for success */
+    color: #fff;
+    font-size: 1.2rem; /* bigger text */
+    padding: 20px 30px; /* more padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.custom-toast.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Profile Field  & Order History Custom Css */
+.card {
+    border-radius: 1rem;
+}
+.profile-field .edit-btn {
+    visibility: hidden;
+}
+.profile-field:hover .edit-btn {
+    visibility: visible;
+}
+.field-display,
+.editable-input {
+    min-height: 42px;
+}
+.order-history-column .card-body {
+    gap: 15px;
+}
+.order-history-column ul.list-group {
+    margin-bottom: 0;
+}
+.no-orders-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+}
+
+/*For cart.php Page*/
+.checkout-btn {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+}
+.checkout-btn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(40, 167, 69, 0.4);
+}
